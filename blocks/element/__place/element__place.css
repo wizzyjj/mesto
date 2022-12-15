@@ -1,0 +1,8 @@
+.element__place {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 8.86% 5.32% 10.98% 7.45%;
+  }
+  

@@ -1,0 +1,17 @@
+.elements__ul {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px;
+  margin-top: 5.8%;
+  display: grid;
+  max-width: 880px;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  column-gap: 17px;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 560px) {
+  .elements__ul {
+    margin-top: 35px;
+  }
+}

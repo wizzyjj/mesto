@@ -1,0 +1,11 @@
+.element {
+    border-radius: 10px;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 9%;
+    color: #000;
+    overflow: hidden;
+    line-height: 0;
+    padding: 0;
+  }
+  
