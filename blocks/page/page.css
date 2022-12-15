@@ -5,8 +5,8 @@
   min-width: 320px;
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 560px) {
   .page {
     padding-top: 28px;
-  } 
-} 
+  }
+}

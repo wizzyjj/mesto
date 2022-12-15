@@ -8,4 +8,14 @@
   line-height: 29px;
   color: #545454;
   text-align: left;
-} 
+}
+
+@media screen and (max-width: 710px) {
+  .footer__copyright { 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 48px;
+    margin-bottom: 36px;
+  }
+}

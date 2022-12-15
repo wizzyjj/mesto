@@ -1,32 +1,24 @@
-@import url(../normalize.css);
+@import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
-
 @import url(../blocks/element/__image/element__image.css);
 @import url(../blocks/element/__like/element__like.css);
 @import url(../blocks/element/__place/element__place.css);
 @import url(../blocks/element/__title/element__title.css);
 @import url(../blocks/element/element.css);
-
 @import url(../blocks/elements/__ul/elements__ul.css);
-
 @import url(../blocks/footer/__copyright/footer__copyright.css);
-
 @import url(../blocks/form/__button/form_button.css);
-@import url(../blocks/form/__field_job/form__field_job.css);
-@import url(../blocks/form/__field_name/form__field_name.css);
+@import url(../blocks/form/__field-name/form__field-name.css);
+@import url(../blocks/form/__field-job/form__field-job.css);
 @import url(../blocks/form/__heading/form__heading.css);
 @import url(../blocks/form/__item/form__item.css);
 @import url(../blocks/form/form.css);
-
 @import url(../blocks/header/__logo/header__logo.css);
-@import url(../blocks/header/header.css); 
-
+@import url(../blocks/header/header.css);
 @import url(../blocks/page/page.css);
-
 @import url(../blocks/popup/__button/popup__button.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/popup.css);
-
 @import url(../blocks/profile/__add-button/profile__add-button.css);
 @import url(../blocks/profile/__avatar/profile__avatar.css);
 @import url(../blocks/profile/__block/__profile_block.css);
@@ -34,46 +26,6 @@
 @import url(../blocks/profile/__info/profile__info.css);
 @import url(../blocks/profile/__subtitle/profile__subtitle.css);
 @import url(../blocks/profile/__title/profile__title.css);
-@import url(../blocks/profile/profile.css); 
-
-@import url(../blocks/content/content.css); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/content/content.css);
 @import url(../blocks/popup/_opened/popup_opened.css);

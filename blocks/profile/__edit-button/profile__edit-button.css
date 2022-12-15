@@ -4,12 +4,13 @@
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  min-width: 24px;
+  width: 24px;
   height: 24px;
   margin-left: 18px;
   border: 1px solid #fff;
   background-position: center;
   cursor: pointer;
+  align-self: center;
 }
 
 .profile__edit-button:hover {
@@ -19,14 +20,13 @@
 @media screen and (max-width: 920px) {
   .profile__edit-button {
     margin-left: 10px;
-    width: 22px;
-    align-self: center;
+
   } 
 }
 
 @media screen and (max-width: 560px) {
   .profile__edit-button {
-    min-width: 18px;
+    width: 18px;
     height: 18px;
     margin-top: 0;
   }

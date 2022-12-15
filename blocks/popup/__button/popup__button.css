@@ -7,9 +7,19 @@
   height: 32px;
   top: -42px;
   right: -42px;
+  border: 0;
 }
 
 .popup__button:hover {
   opacity: 0.6;
-  cursor: pointer;  
+  cursor: pointer;
+}
+
+@media screen and (max-width: 710px) {
+  .popup__button { 
+    width: 20px;
+    height: 20px;
+    top: -36px;
+    right: -2px;
+  }
 }
