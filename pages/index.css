@@ -1,19 +1,15 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
-
 @import url(../blocks/element/__image/element__image.css);
 @import url(../blocks/element/__like/element__like.css);
 @import url(../blocks/element/__place/element__place.css);
 @import url(../blocks/element/__title/element__title.css);
 @import url(../blocks/element/element.css);
 @import url(../blocks/elements/__ul/elements__ul.css);
-
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 @import url(../blocks/form/__button/form__button.css);
-@import url(../blocks/form/__field-name/form__field-name.css);
-@import url(../blocks/form/__field-job/form__field-job.css);
+@import url(../blocks/form/__input/form__input.css);
 @import url(../blocks/form/__heading/form__heading.css);
-
 @import url(../blocks/form/form.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/header.css);
