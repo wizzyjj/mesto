@@ -9,16 +9,16 @@ const formProfile = document.querySelector('.form_modal_profile');
 const cardsContainer = document.querySelector('.elements__ul');
 const cardAddButton = document.querySelector('.profile__add-button');
 const popupEditSave = document.querySelector('.popup__form-edit');
-const formAddCard = document.querySelector('.popup__form_add');
-const cardPopup = document.querySelector('.popup_type_pic');
-const addCardPopup = document.querySelector('.popup_type_add');
+const formAddCard = document.querySelector('.popup__form-add');
+const cardPopup = document.querySelector('.popup_pic');
+const addCardPopup = document.querySelector('.popup_add');
 const buttonsClosePopup = document.querySelectorAll('.popup__button');
 const buttonOpenPopupAddCard = document.querySelector('.profile__add-button');
 const cardPopupImage = document.querySelector('.popup__image');
 const cardPopupCaption = document.querySelector('.popup__caption');
-const titleCardElem = document.querySelector('.popup__input_type_place-name');
-const linkCardElem = document.querySelector('.popup__input_type_place-link');
-const editPopup = document.querySelector('.popup_type_edit'); 
+const titleCardElem = document.querySelector('.form__input_name');
+const linkCardElem = document.querySelector('.form__input_link');
+const editPopup = document.querySelector('.popup_edit'); 
 
 function openPopup(item) {
   item.classList.add('popup_opened');
