@@ -1,5 +1,8 @@
 .element__image {
-    width: 100%;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 282px;
     height: 282px;
     object-fit: cover;
     border-radius: 0;

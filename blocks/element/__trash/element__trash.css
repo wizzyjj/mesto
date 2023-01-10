@@ -11,3 +11,8 @@
     height: 19px;
     cursor: pointer;
   }
+
+  .element__trash:hover {
+    opacity: 0.6;
+  }
+  
