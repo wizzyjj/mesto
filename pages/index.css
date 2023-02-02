@@ -29,25 +29,13 @@
 @import url(../blocks/element/__trash/element__trash.css);
 @import url(../blocks/popup/__pic-box/popup__pic-box.css);
 @import url(../blocks/popup/__form/popup__form.css);
-@import url(../blocks/popup/_type/popup_type_add.css);
-@import url(../blocks/popup/_type/popup_type_edit.css);
-@import url(../blocks/popup/_type/popup_type_pic.css);
 @import url(../blocks/element/__like/element__like.css);
 @import url(../blocks/element/__like/_active/card__like_active.css);
 @import url(../blocks/popup/__image/popup__image.css);
 @import url(../blocks/popup/__caption/popup__caption.css);
-
 @import url(../blocks/form/__button/_inactive/form__submit-button_inactive.css);
-@import url(../blocks/form/__input/_type_error/form__input_type_error.css);
-
 @import url(../blocks/form/__input-error/form__input-error.css);
 @import url(../blocks/form/__input-error/_active/form__input-error_active.css);
-
-
-
-
-
-
 
 
 
