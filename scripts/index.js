@@ -19,10 +19,14 @@ const editPopup = document.querySelector('.popup_edit');
 
 function openPopup(item) {
   item.classList.add('popup_opened');
+  item.addEventListener('mousedown', closeByOverlay);
+ document.addEventListener('keydown', closeByEscBtn);
 }
 
 function closePopup(item) {
-  item.classList.remove('popup_opened');
+  item.closest('.popup').classList.remove('popup_opened');
+/*   popup.closest('.popup').classList.remove('popup_opened'); */
+  document.removeEventListener('keydown', closeByEscBtn);
 }
 
 function submitEditProfileForm(event) {
@@ -87,3 +91,18 @@ formAddCard.addEventListener('submit', function (evt) {
   closePopup(addCardPopup);
   formAddCard.reset();
 });
+
+function closeByOverlay(evt) {
+  if (evt.target.classList.contains('popup')) {
+    console.log('Overlay clicked');
+    closePopup(evt.target);
+  };
+}
+
+function closeByEscBtn(evt) {
+  if (evt.key === 'Escape') {
+    console.log('Escape pressed');
+    const popup = document.querySelectorAll('.popup');
+    popup.forEach(closePopup);
+  };
+}

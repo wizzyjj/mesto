@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./pages/index.css">
     <script defer src="./scripts/constants.js"></script>
     <script defer src="./scripts/index.js"></script>
+    <script defer src="./scripts/validation.js"></script>
     <link rel="shortcut icon" href="#">
     <title>Mesto Russia</title>
   </head>
@@ -37,10 +38,16 @@
     <div class="popup popup_edit">
       <div class="popup__container">
         <button type="button" class="popup__button"></button>
-        <form class="form popup__form-edit" method="post" name="form form_modal_profile">
+        <form class="form popup__form-edit" method="post" name="form form_modal_profile" novalidate>
           <h2 class="form__heading">Редактировать профиль</h2>
-          <input required type="text" class="form__input form__input_field_name" name="field-name" placeholder="Имя">
-          <input required type="text" class="form__input form__input_field_job" name="field-job" placeholder="О себе">
+
+
+          <input required type="text" class="form__input form__input_field_name" name="field-name" placeholder="Имя" id="username" minlength="2" maxlength="40">
+          <span class="form__input-error username-error"></span>
+
+          <input required type="text" class="form__input form__input_field_job" name="field-job" placeholder="О себе" id="userjob" minlength="2" maxlength="200">
+          <span class="form__input-error userjob-error"></span>
+
           <button type="submit" class="form__button">Сохранить</button>
         </form>
       </div>
@@ -50,8 +57,13 @@
         <button type="button" class="popup__button"></button>
         <form class="form popup__form-add" method="post" name="form form_modal_profile">
           <h2 class="form__heading">Новое место</h2>
-          <input required type="text" class="form__input form__input_name" placeholder="Название">
-          <input required type="url" class="form__input form__input_link" name="link" placeholder="Ссылка на картинку">
+
+          <input required type="text" class="form__input form__input_name" placeholder="Название" id="placename" minlength="2" maxlength="30">
+          <span class="form__input-error placename-error"></span>
+
+          <input required type="url" class="form__input form__input_link" name="link" placeholder="Ссылка на картинку" id="placeurl">
+          <span class="form__input-error placeurl-error"></span>
+
           <button type="submit" class="form__button">Создать</button>
         </form>
       </div>
