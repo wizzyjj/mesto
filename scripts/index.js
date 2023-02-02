@@ -16,17 +16,21 @@ const cardPopupCaption = document.querySelector('.popup__caption');
 const titleCardElem = document.querySelector('.form__input_name');
 const linkCardElem = document.querySelector('.form__input_link');
 const editPopup = document.querySelector('.popup_edit'); 
+ 
 
 function openPopup(item) {
   item.classList.add('popup_opened');
-  item.addEventListener('mousedown', closeByOverlay);
- document.addEventListener('keydown', closeByEscBtn);
+  document.addEventListener('mousedown', closeByOverlay);
+  document.addEventListener('keydown', closeByEscBtn);
 }
+
 
 function closePopup(item) {
   item.closest('.popup').classList.remove('popup_opened');
   document.removeEventListener('keydown', closeByEscBtn);
+  document.removeEventListener('mousedown', closeByOverlay);
 }
+
 
 function submitEditProfileForm(event) {
   event.preventDefault();
@@ -35,6 +39,7 @@ function submitEditProfileForm(event) {
   closePopup(editPopup);
 }
 
+
 formProfile.addEventListener('submit', submitEditProfileForm);
 editButton.addEventListener('click', function () {
   openPopup(editPopup);
@@ -42,9 +47,11 @@ editButton.addEventListener('click', function () {
   popupProfession.value = profileJob.innerText;
 });
 
+
 buttonOpenPopupAddCard.addEventListener('click', function () {
-  openPopup(addCardPopup);
-});
+openPopup(addCardPopup);
+}); 
+
 
 buttonsClosePopup.forEach(button => button.addEventListener('click', () => {
   const closeBtn = button.closest('.popup');
@@ -76,13 +83,16 @@ buttonsClosePopup.forEach(button => button.addEventListener('click', () => {
   return cardContentClone
 }
 
+
 const addCard = (newCard) => {
   cardsContainer.prepend(newCard);
 }
 
+
 initialCards.forEach((item) => {
   addCard(createCard(item.name, item.link));
 })
+
 
 formAddCard.addEventListener('submit', function (evt) {
   evt.preventDefault();
@@ -91,12 +101,14 @@ formAddCard.addEventListener('submit', function (evt) {
   formAddCard.reset();
 });
 
+
 function closeByOverlay(evt) {
   if (evt.target.classList.contains('popup')) {
     console.log('Overlay clicked');
     closePopup(evt.target);
   };
 }
+
 
 function closeByEscBtn(evt) {
   if (evt.key === 'Escape') {
