@@ -1,17 +1,10 @@
 .form__input-error {
-    display: flex;
-    color: #FF0000;
-    font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    color: #ff0000;
+    font-weight: 400;
     min-height: 30px;
-    padding-top: 5px;
-    padding-bottom: 13px;
-    opacity: 0;
-  }
-  
-  .form__input-error:last-of-type {
-    margin-bottom: 0px;
-    padding-bottom: 13.34px;
+    margin-top: 4px;
+
   }
   
