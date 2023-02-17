@@ -1,10 +1,12 @@
 import * as index from '../scripts/index.js';
 
 export class Card {
-    constructor(data, templateSelector) {
+     constructor(data, templateSelector) {
       this._templateSelector = templateSelector;
       this._name = data.name;
       this._link = data.link;
+ 
+      
     };
 
     createCard() {

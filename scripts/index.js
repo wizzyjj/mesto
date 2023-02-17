@@ -54,17 +54,19 @@ export const handleClosePopup = (popup) => {
   document.removeEventListener('keydown', closePopupEscape);
 };
 
-function createCard() {
-  const card = new Card({name: inputTitle.value, link: inputLink.value}, '#card-template');
+function prependCard(targetElement) {
+  sectionGallery.prepend(targetElement);
+}
+
+function createCard(item) {
+  const card = new Card(item, '#card-template');
   const cardElement = card.createCard();
-  sectionGallery.prepend(cardElement);
+  return cardElement
+}
 
-  return cardElement;
-};
-
-const handleSubmitFormAddCard = (evt) => {
+function handleSubmitFormAddCard(evt) {
   evt.preventDefault();
-  createCard();
+  prependCard(createCard(inputTitle.value, inputLink.value));
   evt.target.reset();
   handleClosePopup(popupAdd);
 };
@@ -112,13 +114,11 @@ popups.forEach((element) => {
   popup.addEventListener('click', (evt) => closePopupClick(evt));
 });
 
-initialCards.forEach((item) => {
-  const card = new Card(item, '#card-template');
-  const cardElement = card.createCard();
-  document.querySelector('.elements').append(cardElement);
-});
-
-
+ initialCards.forEach((item) => { 
+  const card = new Card(item, '#card-template'); 
+  const cardElement = card.createCard(); 
+  sectionGallery.append(cardElement); 
+});  
 
 const formValidProfile = new FormValidator(configuration, popupEdit);
 formValidProfile.enableValidation();
