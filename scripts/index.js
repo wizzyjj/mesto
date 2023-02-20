@@ -66,7 +66,7 @@ function createCard(item) {
 
 function handleSubmitFormAddCard(evt) {
   evt.preventDefault();
-  prependCard(createCard(inputTitle.value, inputLink.value));
+  prependCard(createCard({name: inputTitle.value, link: inputLink.value}));
   evt.target.reset();
   handleClosePopup(popupAdd);
 };
@@ -114,11 +114,14 @@ popups.forEach((element) => {
   popup.addEventListener('click', (evt) => closePopupClick(evt));
 });
 
- initialCards.forEach((item) => { 
-  const card = new Card(item, '#card-template'); 
-  const cardElement = card.createCard(); 
-  sectionGallery.append(cardElement); 
-});  
+function renderCards(event) {
+  initialCards.reverse().forEach(item => {
+    prependCard(createCard(item, '#card-template'));
+  });
+}
+
+
+renderCards();
 
 const formValidProfile = new FormValidator(configuration, popupEdit);
 formValidProfile.enableValidation();
